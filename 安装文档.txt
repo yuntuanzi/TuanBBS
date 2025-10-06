@@ -1,0 +1,10 @@
+环境要求：
+PHP8.1+
+MySQL建议5.6
+redis软件
+nginx
+465端口
+
+上传好安装包，解压后直接访问域名开始安装操作
+
+若想重新安装，请删除config/db.php，installed.lock

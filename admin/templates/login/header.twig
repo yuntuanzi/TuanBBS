@@ -1,0 +1,22 @@
+{% if session_expired == true %}
+    <div id="modalOverlay">
+{% endif %}
+<div class="container{{ add_class }}" style="margin-top: 40px;"> {# 增加顶部40px间距 #}
+<div class="row">
+<div class="col-12 text-center">
+<a href="{{ 'https://github.com/yuntuanzi/'|link }}" target="_blank" rel="noopener noreferrer" class="logo">
+<img src="../../static/images/default-avatar.png" id="imLogo" name="imLogo" alt="喜灰论坛" border="0" 
+     style="width: 80px; height: 80px; border-radius: 8px; max-width: 100%;">
+</a>
+{# 标题字号放大至2.5rem，增大上下间距 #}
+<h1 style="color: #165DFF; margin: 25px 0 15px; line-height: 1.2; font-size: 2.5rem;">欢迎回来</h1>
+{# 说明文字字号放大至1.2rem，加深颜色对比度 #}
+<p style="margin: 0 0 25px; color: #222; font-size: 1.2rem;">请填写你的数据库账密</p>
+
+<noscript>
+{{ "Javascript must be enabled past this point!"|trans|error }}
+</noscript>
+
+<div class="hide" id="js-https-mismatch">
+{{ "There is a mismatch between HTTPS indicated on the server and client. This can lead to a non working phpMyAdmin or a security risk. Please fix your server configuration to indicate HTTPS properly."|trans|error }}
+</div>
